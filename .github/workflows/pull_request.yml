@@ -4,6 +4,9 @@ on:
   pull_request:
     types: [ opened, edited, reopened, synchronize ]
 
+  # enable manual start of this workflow
+  workflow_dispatch:
+
 # Allow to stop obsolete workflows
 concurrency:
   group: ci-buildtrain-pr-${{ github.ref }}-1
